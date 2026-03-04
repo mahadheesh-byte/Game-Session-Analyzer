@@ -82,3 +82,103 @@ Session length vs Story playtime
 Session length vs MOBA playtime
 
 A regression line shows the predicted relationship.
+
+📂 Project Structure
+game-session-analyzer
+│
+├── main.py
+├── sessions.csv
+├── usage.csv
+├── requirements.txt
+├── README.md
+└── .gitignore
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/yourusername/game-session-analyzer.git
+cd game-session-analyzer
+
+Create a virtual environment (recommended):
+
+python -m venv venv
+
+Activate it.
+
+Windows
+
+venv\Scripts\activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+▶️ Running the Program
+
+Start tracking usage:
+
+python main.py
+
+Stop tracking with:
+
+CTRL + C
+
+After stopping, the program will:
+
+1️⃣ Save usage statistics
+2️⃣ Generate session data
+3️⃣ Allow you to run predictions
+
+Menu:
+
+press 1 → FPS prediction
+press 2 → Story game prediction
+press 3 → MOBA prediction
+press 0 → Exit
+📈 Example Output
+Session Length: 7200 seconds
+Predicted FPS Time: 4800 seconds
+
+Graph example:
+
+Session Length vs FPS Playtime
+(scatter plot with regression line)
+🛠 Technologies Used
+
+Python
+
+psutil
+
+pywin32
+
+pandas
+
+numpy
+
+matplotlib
+
+seaborn
+
+scikit-learn
+
+⚠️ Windows Only
+
+This project uses Windows APIs:
+
+win32gui
+win32process
+
+So it currently only works on Windows systems.
+
+🔮 Possible Improvements
+
+Real-time dashboard
+
+Support for Steam / Epic APIs
+
+Automatic game detection
+
+Weekly playtime reports
+
+Deep learning prediction models
+
+Cross-platform support
